@@ -1,0 +1,240 @@
+
+*{
+--burgundy: #780116ff;
+--sunflower-gold: #f7b538ff;
+--ochre: #db7c26ff;
+--spicy-paprika: #d8572aff;
+--flag-red: #c32f27ff;
+--linkon: black;
+--link: rgb(252, 252, 252);
+
+}
+
+
+body {
+    margin: 0;
+    justify-content: center;
+    background-color: rgb(12, 0, 0);
+    font-size: 1.5rem;
+}
+
+.header {
+    background-color: var(--burgundy);
+    padding: 1%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    height: 3rem;
+    font-size: 1rem;
+    animation-name: fadeInAno;
+    animation-duration: 1s;
+
+}
+.header a {
+    color: var(--link);
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 9%;
+}
+.header a:hover {
+    transition-duration: 0.5s;
+    color: var(--linkon);
+    background-color: var(--link);
+    scale: 1.35;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: var(--spicy-paprika);
+    animation-name: fadeInAno;
+    animation-duration: 1s;
+
+}
+
+#main{
+    width: 100%;
+    justify-self: center;
+
+}
+
+.intro {
+    padding: 8%;
+    margin: 0px;
+    background-color: var(--spicy-paprika);
+    color: rgb(255, 255, 255);
+    font-size: 3.125rem;
+    font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.split-middle {
+    display: flex;
+    width: 100%;
+    height: 100%;  
+}
+
+.left-side {
+    width: 50%;
+    background-color: #faedca;
+    color: rgb(12, 0, 0);
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 3%;
+    margin-right: 0.3rem;
+    min-height: 70vh;
+    height: auto;
+    animation-name: fadeInAno;
+    animation-duration: 3s;
+}
+
+.right-side {
+    width: 50%;
+    background-color: rgb(255, 217, 93);
+    color: rgb(251, 241, 241);
+    padding: 10px;
+    border-radius: 3%;
+    min-height: 70vh;
+    height: auto;
+    animation-name: fadeInAno;
+    animation-duration: 3s;
+    margin-left: 0.3rem;
+
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    padding: 1%;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+.logo img{
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+#homebar{
+    gap: 70px;
+}
+
+.home {
+    text-decoration: none;
+    color: var(--midnight-violet);
+    font-size: 5%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.menu  {    
+    float: right;
+    position: relative;
+    right: 3%;
+    padding-top: 2.6rem;
+    margin: 0;      
+} 
+
+.menu img {
+    display: flex;
+    height: auto;
+    width: 30vw;
+    border-radius: 20%;
+    float: left;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.bottom-content {
+    background-color:#c1dbb3;
+    padding: 20px;
+    min-height: 50vh;
+    height: auto;
+    margin-top: 1rem;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInAno;
+    animation-duration: 3s;
+    
+}
+
+.bottom-content h2 {
+  margin-left: 18.5rem;
+}
+
+.image2 img {
+    width: 35vw;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20%;
+    
+}
+
+.image3 img {
+    width: auto;
+    height: 30vh;
+    border-radius: 20%;
+    margin-top:0.5rem;
+    margin-right: 2rem;
+}
+.image3 {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes fadeInAno {
+    from {
+            opacity: 0.5s;
+            transform: translateY(20px);
+    }
+    to {
+            opacity: 1;
+            transform: translateY(0);
+    }
+}
+
+
+#middle{
+    width: 80%;
+    background-color: wheat;
+}
+
+#instructies{
+    background-color: red;
+
+    gap: 5px;
+}
+
+#gids-split{
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+}
+
+#guide-textbox{
+    width: 80%;
+    background-color: red;
+    border-radius: 5%;
+    text-align: center;
+}
+
+#guide-image{
+    width: 80%;
+    border-radius: 5%;
+}
