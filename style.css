@@ -7,6 +7,12 @@
     --linkon: black;
     --link: rgb(252, 252, 252);
 
+    --gunmetal: #F7F4EF;
+    --dusty-mauve: #1D3657;
+    --lavender-gray: #45789D;
+    --cool-steel: #DDF1F2;
+    --aquamarine: #A8DADC;
+
 }
 
 html {
@@ -21,10 +27,10 @@ body {
 }
 
 .header {
-    background-color: var(--burgundy);
+    background-color: var(--gunmetal);
     padding: 1%;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: var(--lavender-gray);
     margin: 0px;
     height: 3rem;
     font-size: 1rem;
@@ -37,7 +43,7 @@ body {
 }
 
 .header a {
-    color: var(--link);
+    color: var(--lavender-gray);
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
@@ -47,7 +53,7 @@ body {
 
 .header a:hover {
     transition-duration: 0.5s;
-    color: var(--linkon);
+    color: var(--lavender-gray);
     background-color: var(--link);
     scale: 1.35;
 }
@@ -58,7 +64,7 @@ main {
     align-items: center;
     justify-content: center;
     width: auto;
-    background-color: var(--spicy-paprika);
+    background-color: var(--aquamarine);
     animation-name: fadeInAno;
     animation-duration: 1s;
 
@@ -73,8 +79,8 @@ main {
 .intro {
     padding: 8%;
     margin: 0px;
-    background-color: var(--spicy-paprika);
-    color: rgb(255, 255, 255);
+    background-color: var(--aquamarine);
+    color: var(--cool-steel);
     font-size: 3.125rem;
     font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -87,7 +93,7 @@ main {
 
 .left-side {
     width: 50%;
-    background-color: #faedca;
+    background-color: var(--cool-steel);
     color: rgb(12, 0, 0);
     padding: 10px;
     font-size: 1.1rem;
@@ -101,7 +107,7 @@ main {
 
 .right-side {
     width: 50%;
-    background-color: rgb(255, 217, 93);
+    background-color: var(--cool-steel);
     color: rgb(251, 241, 241);
     padding: 10px;
     border-radius: 3%;
@@ -114,11 +120,11 @@ main {
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--gunmetal);
     font-size: 0.9rem;
     padding: 1%;
     text-align: center;
-    color: white;
+    color: var(--lavender-gray);
     margin: 0px;
 }
 
@@ -165,7 +171,7 @@ footer {
 }
 
 .bottom-content {
-    background-color: #c1dbb3;
+    background-color: var(--aquamarine);
     padding: 20px;
     min-height: 50vh;
     height: auto;
@@ -222,11 +228,11 @@ footer {
 
 #middle {
     width: 80%;
-    background-color: wheat;
+    background-color: var(--aquamarine);
 }
 
 #instructies {
-    background-color: red;
+    background-color: var(--aquamarine);
 
     gap: 5px;
 }
@@ -239,7 +245,7 @@ footer {
 
 #guide-textbox {
     width: 80%;
-    background-color: red;
+    background-color: var(--cool-steel);
     border-radius: 5%;
     text-align: left;
 }
@@ -252,4 +258,42 @@ footer {
 #guide-textbox p {
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.contact {
+    background-color: var(--aquamarine);
+    padding: 20%;
+    text-align: center;
+    color: var(--cool-steel);
+    margin: 0px;
+    font-size: 1rem;
+}
+
+#contact-info {
+    background-color: white;
+    padding: 20%;
+    width: 60%;
+    text-align: right;
+    color: black;
+    margin: 0px;
+    font-size: 1rem;
+    display: flex;
+}
+
+.contact-details form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.contact-form h3,
+.contact-form p {
+    text-align: left;
+    padding: 2%;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
 }
