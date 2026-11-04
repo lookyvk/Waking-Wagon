@@ -1,5 +1,6 @@
-2<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,44 @@
 
 <body>
     <header class="header">
-    <div class="logo">
+        <div class="logo">
             <img src="logo.png" alt="Waking Wagon Logo">
-    </div>
-        <div id="homebar" class="home"> <a href="index.html">Home </a> <a href="gids.html">Services </a> <a href="contact.html">Contact</a> </div>
+        </div>
+        <div id="homebar" class="home">
+            <a href="index.html">Home </a>
+            <a href="gids.html">Services </a>
+            <a href="contact.html">Contact</a>
+        </div>
     </header>
     <main>
-                <section class="middle">
-            <div class="split-middle">
-                <div class="left-side">
-                    <h2>Information</h2>
-                </div>
-                <div class="right-side">
-                    <h2>Message</h2>
-                    </div>
-                </div>
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+        </section>
+        <section id="contact-info">
+            <section class="contact-form">
+                <h3>Message Us</h3>
+                <p>Please fill out the form below, and we'll get back to you as soon as possible.</p>
+            </section>
+            <div class="contact-details">
+                <form action="mailto:info@wakingwagon.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
             </div>
+            </form>
         </section>
     </main>
-    <footer><p>&copy; 2026 Waking Wagon. All rights reserved.</p></footer>
+    <footer>
+        <p>&copy; 2026 Waking Wagon. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
