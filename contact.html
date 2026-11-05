@@ -15,7 +15,7 @@
         </div>
         <div id="homebar" class="home">
             <a href="index.html">Home </a>
-            <a href="gids.html">Services </a>
+            <a href="gids.html">User Guide </a>
             <a href="contact.html">Contact</a>
         </div>
     </header>
@@ -24,10 +24,11 @@
             <h2>Get In Touch</h2>
             <p>Have questions or feedback? We'd love to hear from you!</p>
         </section>
-        <section id="contact-info">
+
+        <div class="box-contact">
             <section class="contact-form">
-                <h3>Message Us</h3>
-                <p>Please fill out the form below, and we'll get back to you as soon as possible.</p>
+                <h3><b>Message Us</b></h3>
+                <p><b>Please fill out the form below, and we'll get back to you as soon as possible.</b></p>
             </section>
             <div class="contact-details">
                 <form action="mailto:info@wakingwagon.com" method="post" enctype="text/plain">
@@ -37,13 +38,29 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="option">
+                        <label for="subject">Subject:</label>
+                        <input type="checkbox" id="Repair" value="Repair">
+                        <label for="Repair">Repair Request</label>
+                        <input type="checkbox" id="Feedback" value="Feedback">
+                        <label for="Feedback">Feedback</label>
+                        <input type="checkbox" id="Refund" value="broken">
+                        <label for="Refund">Refund</label>
+                        <input type="checkbox" id="Other" value="Other">
+                        <label for="Other">Other</label>
+                    </div>
 
-                    <button type="submit">Send Message</button>
+                    <section class="message-box">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </section>
             </div>
             </form>
-        </section>
+        </div>
+
     </main>
     <footer>
         <p>&copy; 2026 Waking Wagon. All rights reserved.</p>
