@@ -30,6 +30,7 @@ body {
     background-color: var(--gunmetal);
     padding: 1%;
     text-align: center;
+    width: 100%;
     color: var(--lavender-gray);
     margin: 0px;
     height: 3rem;
