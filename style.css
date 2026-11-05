@@ -1,7 +1,6 @@
 * {
     --burgundy: #780116ff;
     --sunflower-gold: #f7b538ff;
-    
     --ochre: #db7c26ff;
     --spicy-paprika: #d8572aff;
     --flag-red: #c32f27ff;
@@ -29,12 +28,10 @@ body {
 
 .header {
     background-color: var(--gunmetal);
-    padding: 1%;
+    padding: 1.5%;
     text-align: center;
-    width: 100%;
     color: var(--lavender-gray);
     margin: 0px;
-    height: 3rem;
     font-size: 1rem;
     animation-name: fadeInAno;
     animation-duration: 1s;
@@ -91,11 +88,6 @@ main {
     display: flex;
     width: 100%;
     height: 100%;
-
-        @media (max-width: 1000px) {
-        display: block;
-        justify-content: center;
-    }
 }
 
 .left-side {
@@ -135,15 +127,14 @@ footer {
     margin: 0px;
 }
 
-.logo {
-    width: 100px;
-    height: auto;
-}
+.logo {}
 
 .logo img {
-    float: left;
+    display: flex;
+    flex-direction: row;
     width: auto;
-    height: auto;
+    height: 10vh;
+    float: left;
 }
 
 #homebar {
@@ -197,7 +188,7 @@ footer {
     margin-left: 18.5rem;
 }
 
-.image2 img {
+.home-image img {
     width: 35vw;
     height: auto;
     object-fit: cover;
@@ -207,7 +198,7 @@ footer {
 
 }
 
-.image3 img {
+.product-home-image img {
     width: auto;
     height: 30vh;
     border-radius: 20%;
@@ -215,7 +206,7 @@ footer {
     margin-right: 2rem;
 }
 
-.image3 {
+.product-home-image {
     display: flex;
     flex-direction: row;
 }
@@ -248,11 +239,6 @@ footer {
     display: flex;
     padding: 8px;
     gap: 8px;
-
-    @media (max-width: 1000px) {
-        display: block;
-        justify-content: center;
-    }
 }
 
 #guide-textbox {
@@ -263,27 +249,36 @@ footer {
 }
 
 #guide-image {
-    width: 80%;
+    width: 20%;
     border-radius: 5%;
+    height: 30%;
 }
 
 #guide-textbox p {
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
-    padding: 0.3rem;
+    padding-left: 1%;
+}
+
+#guide-textbox h3 {
+    padding-left: 1%;
 }
 
 .contact {
     background-color: var(--aquamarine);
-    padding: 20%;
+    padding: 13%;
     text-align: center;
-    color: var(--cool-steel);
+    color: var(--dusty-mauve);
     margin: 0px;
     font-size: 1rem;
 }
 
+.contact h2 {
+    font-size: 2.5rem;
+    color: var(--dusty-mauve);
+}
+
 #contact-info {
-    background-color: white;
     padding: 20%;
     width: 60%;
     text-align: right;
@@ -296,16 +291,51 @@ footer {
 .contact-details form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: self-start;
     justify-content: flex-end;
     gap: 10px;
+    padding-left: 3%;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
 }
 
 .contact-form h3,
 .contact-form p {
     text-align: left;
-    padding: 2%;
+    padding-left: 2%;
 }
+
 .contact-form h3 {
     font-size: 1.8rem;
 }
+
+.box-contact {
+    width: 100%;
+    background-color: var(--cool-steel);
+    color: rgb(12, 0, 0);
+    font-size: 1.05rem;
+    border-radius: 3%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    height: auto;
+    animation-name: fadeInAno;
+    animation-duration: 3s;
+
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+}
+
+.option input {
+    margin-left: 2rem;
+
+}
+
+@media (min-width: 600px) {}
