@@ -1,6 +1,7 @@
 * {
     --burgundy: #780116ff;
     --sunflower-gold: #f7b538ff;
+    
     --ochre: #db7c26ff;
     --spicy-paprika: #d8572aff;
     --flag-red: #c32f27ff;
@@ -242,6 +243,12 @@ footer {
     display: flex;
     padding: 8px;
     gap: 8px;
+
+        @media (max-width: 1000px) {
+        width: 80vw;
+        justify-self: center;
+        border-top: 1px solid black;
+    }
 }
 
 #guide-textbox {
