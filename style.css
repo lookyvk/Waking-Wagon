@@ -300,8 +300,6 @@ footer {
 }
 
 @media (min-width: 600px) {
-    .split-middle {
-        display: block;
-        justify-content: center;
-    }
+    main {
+        background-color: orange;
 }
