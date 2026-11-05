@@ -298,8 +298,3 @@ footer {
 .contact-form h3 {
     font-size: 1.8rem;
 }
-
-@media (min-width: 600px) {
-    main {
-        background-color: orange;
-}
